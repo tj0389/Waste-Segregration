@@ -18,7 +18,7 @@
 </pre>
 ## Command :
  1. Run app.py file using "python app.py" command on the terminal and install the necessary requirements.
- 2. Copy the resulting link or address from the terminal (http://127.0.0.1:5000/) and run into the browser of your choice
+ 2. Copy the resulting link or address from the terminal and run into the browser of your choice
  3. select file which you want to categorise or segregate.
  4. The category of image is shown as the output
  
