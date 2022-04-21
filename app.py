@@ -6,7 +6,6 @@ import os
 from keras.preprocessing import image
 from keras.models import model_from_json
 
-
 app = Flask(__name__)
 
 UPLOAD_FOLDER = './static/images'
@@ -45,8 +44,6 @@ def upload():
         path=os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(path)
 
-
-        
         image_path=path
         img=image.load_img(image_path,target_size=(40,40))
         img_array=image.img_to_array(img)
@@ -55,7 +52,6 @@ def upload():
         prob=loaded_model.predict(img_array.reshape(-1,40,40,3))
         prob=np.array(prob)
         
-
         return render_template('index.html', status=label2gar[np.argmax(prob)],user_image=path)
 
     except Exception as err:

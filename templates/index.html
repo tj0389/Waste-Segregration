@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Waste Classification</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -23,14 +23,14 @@
 <body>
 
     <div  class="outer">
-            <h1 style="color: black;">WASTE MANAGEMENT</h1>
+            <h1 style="color: black; text-align: center;">WASTE CLASSIFICATION</h1>
             <br>
            <!--  <hr width="20%" color="red" align="left"> -->
     </div>   
     
     <form action="{{ url_for('upload')}}" class= "container" method="post" enctype="multipart/form-data">
         <div id="box">
-            <label for="fileUpload">Upload garabage here</label><br>
+            <label style="margin-left: 20px;" for="fileUpload">Upload garabage image here</label><br>
             <input type="file" id="fileUpload" name ="myImage">
         <button style="background-color:darkcyan;" id="upload">upload</button>
 
