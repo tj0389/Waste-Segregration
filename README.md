@@ -17,10 +17,14 @@
   ML Techniques : neural network analysis , deep learning , cnn arcitecture , keras model , tensorflow model
 </pre>
 ## Command :
- 1. Run app.py file using "python app.py" command on the terminal and install the necessary requirements.
- 2. Copy the resulting link or address from the terminal and run into the browser of your choice
- 3. select file which you want to categorise or segregate.
- 4. The category of image is shown as the output
+ 1. Run command pip install -r requirements.txt
+ 2. Run app.py file using "python app.py" command on the terminal and install the necessary requirements.
+ 3. Copy the resulting link or address from the terminal and run into the browser of your choice
+ 4. select file which you want to categorise or segregate.
+ 5. The category of image is shown as the output
+
+## Google Colab Code 
+    https://drive.google.com/file/d/1Kqep2efCvDFpybb6Zpt3GYM62tlk3qcX/view?usp=sharing
  
  
  
