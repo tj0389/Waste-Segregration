@@ -22,6 +22,9 @@
  3. Copy the resulting link or address from the terminal and run into the browser of your choice
  4. select file which you want to categorise or segregate.
  5. The category of image is shown as the output
+
+## Google Colab Code 
+    https://drive.google.com/file/d/1Kqep2efCvDFpybb6Zpt3GYM62tlk3qcX/view?usp=sharing
  
  
  
