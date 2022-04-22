@@ -1,50 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waste Classification</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-   <script aysnc defer src="{{ url_for('static',filename='script.js') }}"></script>
-   <style type="text/css">
-    body{
-        font-family: 'Montserrat', sans-serif;
-    /* background-color : #1261A0; */
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      aysnc
+      defer
+      src="{{ url_for('static',filename='script.js') }}"
+    ></script>
+    <style type="text/css">
+      body {
+        font-family: "Montserrat", sans-serif;
+        /* background-color : #1261A0; */
 
         background-image: url("{{ url_for('static', filename='images/4.jpg') }}");
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 30px;
-    }
-   </style>
-</head>
-<body>
-
-    <div  class="outer">
-            <h1 style="color: black; text-align: center;">WASTE CLASSIFICATION</h1>
-            <br>
-           <!--  <hr width="20%" color="red" align="left"> -->
-    </div>   
-    
-    <form action="{{ url_for('upload')}}" class= "container" method="post" enctype="multipart/form-data">
-        <div id="box">
-            <label style="margin-left: 20px;" for="fileUpload">Upload garabage image here</label><br>
-            <input type="file" id="fileUpload" name ="myImage">
-        <button style="background-color:darkcyan;" id="upload">upload</button>
-
-        </div> 
-        </form>
-    <center>
-
-        <div class="lower">
-           <center><img src="{{ user_image }}" alt="" srcset="" id="waste"></center>
-          <h3> {{status}} </h3>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <h1 style="color: black; text-align: center">WASTE CLASSIFICATION</h1>
+      <br />
+      <!--  <hr width="20%" color="red" align="left"> -->
     </div>
 
+    <form
+      action="{{ url_for('upload')}}"
+      class="container"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div id="box">
+        <div>
+          <label class="box-inner" for="fileUpload"
+            >Upload garabage image here</label
+          ><br />
+        </div>
+        <div>
+          <input type="file" id="fileUpload" name="myImage" />
+          <button style="background-color: darkcyan" id="upload">upload</button>
+        </div>
+      </div>
+    </form>
+
+    <center>
+      <div class="lower">
+        <center>
+          <img src="{{ user_image }}" alt="" srcset="" id="waste" />
+        </center>
+        <h3>{{status}}</h3>
+      </div>
     </center>
- 
-</body>
+
+    <div class="row" id="recycling-videos">
+      <br />
+      <div class="classy_frame">
+        <div class="center">
+          <iframe
+            id="video1"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zO3jFKiqmHo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="classy_frame">
+        <div class="center">
+          <iframe
+            id="video2"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/I_fUpP-hq3A"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="what-if">
+      <br />
+      <div class="classy_frame">
+        <center>
+          <h2 style="text-transform: capitalize">
+            What If We Stopped Recycling?
+          </h2>
+        </center>
+
+        <div class="center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8fFJOzXxB54"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="classy_frame">
+        <center>
+          <h2 style="text-transform: capitalize">
+            What If We Created No Waste?
+          </h2>
+        </center>
+
+        <div class="center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wWbL7Mv2MFw"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-  
